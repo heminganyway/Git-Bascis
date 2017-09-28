@@ -39,6 +39,9 @@ show the remote you are working on with url: $ git remote -v
 
 Fetching from Your Remotes: $ git fetch <remote-name> , and you need to merge with you change and then push
 
+merge with a remote branch: $ git checkout branch-i-am-working
+                            $ git merge origin/branch-i-want-merge-from
+
 Pulling from Your Remotes: $ git pull <remote-name> will fetch and merge itself
 
 push your branch upstream: git push <remote-name> <branch-name>
