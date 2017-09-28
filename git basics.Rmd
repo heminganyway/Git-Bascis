@@ -1,0 +1,39 @@
+---
+title: "Git Bascis"
+output: html_document
+---
+
+
+
+
+# 1. initiating a repo
+init a new one: $ cd /your_repo
+                $ git init
+
+clone a repo : $ git clone https://github.com/libgit2/libgit2
+
+
+# 2. keep your change staged and commit
+stage: $ git add filename or $ git add -A
+
+check stage status : $ git status
+
+*It may be helpful to think of it more as "add this content to the next commit" rather than "add this file to the project".
+
+
+Ignoring Files: $ cat .gitignore (default in windows is ignore .csv .png and alot more, check it yourself)
+
+
+# 3. Git Basics - Viewing the Commit History
+view commit history: $ git log
+view commit history in detail: $ git log -p
+view commit history in one line:$ git log --pretty=oneline
+
+
+# 4. Git Basics - Working with Remotes
+show the remote you are working on: $ git remote
+show the remote you are working on with url: $ git remote -v
+Fetching from Your Remotes: $ git fetch <remote-name> , and you need to merge with you change and then push
+Pulling from Your Remotes: $ git pull <remote-name> will fetch and merge itself
+push your branch upstream: git push <remote-name> <branch-name>
+push your master upstream: git push <remote-name> master
